@@ -1,56 +1,65 @@
-<!-- Section Product and Services -->
-<!-- PERBAIKAN: Padding vertikal (py) dikurangi agar section lebih pendek -->
-<div id="product" class="bg-red-600 py-12 sm:py-16 p-4">
+<div id="product" class="bg-gray-100 py-16 sm:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <!-- PERBAIKAN: Struktur judul dirapikan dan margin bawah dikurangi -->
-        <div class="text-center mb-12">
-            <div class="relative">
-                <h2 class="text-2xl font-bold pb-3 text-white uppercase">Product & Services</h2>
-                <div class="absolute bottom-1 left-0 w-full h-0.5 bg-white"></div>
-                <div class="absolute bottom-0 left-0 w-1/3 h-1.5 bg-white"></div>
-            </div>              
-        </div>
+        {{-- Kontainer untuk 5 kartu, menggunakan Flexbox --}}
+        {{-- 'gap-4' memberi jarak antar kartu --}}
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
 
-        <!-- PERBAIKAN: Gap vertikal (gap-y) dikurangi -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-8 text-center">
-            
-            <!-- Item 1: Ethics -->
-            <div class="flex flex-col items-center">
-                <!-- PERBAIKAN: Ukuran ikon dikecilkan -->
-                <div class="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3.005 3.005 0 013.75-2.906z" />
+            {{-- Kartu 1: Посмотреть дома --}}
+            <div class="bg-white rounded-xl shadow-sm p-5 w-full sm:w-auto flex-1 flex flex-col h-32">
+                <div class="mb-2">
+                    {{-- Ikon Rumah --}}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                 </div>
-                <!-- PERBAIKAN: Ukuran font dikecilkan -->
-                <p class="font-semibold text-white uppercase tracking-wider text-sm">
-                    Ethics, Social Issues, and Regulation of AI
-                </p>
+                <p class="text-gray-800 font-medium text-sm flex-grow">Посмотреть<br>дома</p>
             </div>
 
-            <!-- Item 2: Education -->
-            <div class="flex flex-col items-center">
-                <div class="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3.5a1 1 0 00.002 1.788l7 3.5a1 1 0 00.786 0l7-3.5a1 1 0 00.002-1.788l-7-3.5zM3 9.333V14a1 1 0 001 1h12a1 1 0 001-1V9.333l-7 3.5-7-3.5z" />
+            {{-- Kartu 2: Экскурсия по комплексу --}}
+            <div class="bg-white rounded-xl shadow-sm p-5 w-full sm:w-auto flex-1 flex flex-col h-32">
+                <div class="mb-2">
+                    {{-- Ikon Gedung --}}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                 </div>
-                <p class="font-semibold text-white uppercase tracking-wider text-sm">
-                    Education in the Field of Artificial Intelligence and Digital Technology
-                </p>
+                <p class="text-gray-800 font-medium text-sm flex-grow">Экскурсия<br>по комплексу</p>
             </div>
 
-            <!-- Item 3: Training -->
-            <div class="flex flex-col items-center">
-                <div class="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M8.65 20H6q-.825 0-1.412-.587T4 18v-2.65L2.075 13.4q-.275-.3-.425-.662T1.5 12t.15-.737t.425-.663L4 8.65V6q0-.825.588-1.412T6 4h2.65l1.95-1.925q.3-.275.663-.425T12 1.5t.738.15t.662.425L15.35 4H18q.825 0 1.413.588T20 6v2.65l1.925 1.95q.275.3.425.663t.15.737t-.15.738t-.425.662L20 15.35V18q0 .825-.587 1.413T18 20h-2.65l-1.95 1.925q-.3.275-.662.425T12 22.5t-.737-.15t-.663-.425z" />
+            {{-- Kartu 3: Рассчитать ипотеку (State Aktif) --}}
+            {{-- PERUBAHAN: Background dan warna teks berbeda untuk meniru state aktif --}}
+            <div class="bg-stone-500 rounded-xl shadow-md p-5 w-full sm:w-auto flex-1 flex flex-col h-32">
+                <div class="mb-2">
+                    {{-- Ikon Kalkulator --}}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <p class="font-semibold text-white uppercase tracking-wider text-sm">
-                    Training and Certification
-                </p>
+                <p class="text-white font-medium text-sm flex-grow">Рассчитать<br>ипотеку</p>
+            </div>
+
+            {{-- Kartu 4: Скачать буклет --}}
+            <div class="bg-white rounded-xl shadow-sm p-5 w-full sm:w-auto flex-1 flex flex-col h-32">
+                <div class="mb-2">
+                    {{-- Ikon Download --}}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </div>
+                <p class="text-gray-800 font-medium text-sm flex-grow">Скачать<br>буклет</p>
+            </div>
+
+            {{-- Kartu 5: Заказать такси --}}
+            <div class="bg-white rounded-xl shadow-sm p-5 w-full sm:w-auto flex-1 flex flex-col h-32">
+                <div class="mb-2">
+                    {{-- Ikon Mobil/Taksi --}}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <p class="text-gray-800 font-medium text-sm flex-grow">Заказать такси<br>в отдел продаж</p>
             </div>
 
         </div>
