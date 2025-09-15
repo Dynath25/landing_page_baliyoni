@@ -1,0 +1,72 @@
+<?php
+
+namespace App\Http\Controllers;
+use App\Models\Partnership;
+use Illuminate\Http\Request;
+
+class PartnershipController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        //
+        $partnerships = Partnership::where('is_active', 'active')->get();
+
+        // dd($partnerships);
+    
+        // Mengembalikan view dengan data partnerships
+        return view('partnership', [
+            'partnerships' => $partnerships
+        ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
+}
