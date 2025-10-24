@@ -1,40 +1,52 @@
+{{-- resources/views/pages/partnership.blade.php --}}
+
 <x-layout>
-    <div class="p-6 md:p-8 mt-14 text-center">
-        <h1 class="text-2xl md:text-4xl font-semibold text-gray-800">
-            Our <span class="text-red-600">Partnerships</span>
-        </h1>
-        <p class="text-base md:text-lg font-light text-gray-600 mt-1 md:mt-2">
-            We are grateful to all our partners for their invaluable support.
-        </p>
-    </div>
+    <x-slot:title>{{ $title }}</x-slot:title>
 
-    <div
-        data-aos-delay="200"
-        data-aos="fade-down"
-        data-aos-easing="ease-in-out"
-        class="max-w-6xl mx-auto p-4 mt-8">
-        <div class="my-6 mx-auto mt-4 mb-14 z-1">
-
-            <!-- Responsive grid layout -->
-
-            <div class="flex flex-wrap justify-center gap-4">
-                @forelse($partnerships as $partnership)
-                    <div class="rounded-lg shadow-lg hover:shadow-xl transform transition-transform hover:scale-105 hover:border-red-600 transition-shadow bg-transparent">
- 			<div class="w-auto h-40 flex items-center justify-center bg-transparent">
-                            <img
-                                src="{{ asset('storage/' . $partnership->thumbnail) }}"
-                                alt="{{ $partnership->name }}"
-                                class="max-w-auto max-h-40 object-contain rounded bg-transparent"
-                            >
-			</div>
-                        </div>
- 	               @empty
-                    <div class="text-center mt-8 col-span-full">
-                        <p class="text-lg font-light text-gray-600">Partnership Tidak Tersedia Saat Ini</p>
-                    </div>
-                @endforelse
+    {{-- Hero Section --}}
+    <section class="relative h-[100vh] flex items-center text-white">
+        <div class="absolute inset-0 bg-black">
+            <img src="{{ asset('asset/shakehand.jpg') }}" alt="Our Partners" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative container mx-auto px-4">
+            <div class="max-w-xl">
+                <h1 class="text-6xl font-extrabold" data-aos-delay="200" data-aos="fade-down"
+                    data-aos-easing="ease-in-out">Our Partners</h1>
+                <p class="mt-4 text-xl opacity-90" data-aos-delay="300" data-aos="fade-down"
+                    data-aos-easing="ease-in-out">
+                    Bekerja sama dengan pemimpin industri teknologi untuk memberikan solusi terbaik bagi klien kami.
+                </p>
             </div>
         </div>
-    </div>
-</x-layout>
+    </section>
 
+    {{-- Partner Logos Section --}}
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-bold text-gray-800" data-aos-delay="200" data-aos="fade-up"
+                    data-aos-easing="ease-in-out">Who We Work With</h2>
+                <p class="mt-4 text-gray-500" data-aos-delay="300" data-aos="fade-up" data-aos-easing="ease-in-out">Kami
+                    bangga dapat berkolaborasi dengan berbagai perusahaan ternama di
+                    bidangnya masing-masing untuk menghadirkan inovasi dan keunggulan.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
+
+                @forelse ($partnerships as $partner)
+                    <div class="p-6 rounded-lg shadow-sm flex items-center justify-center h-36 w-full max-w-[200px] border-2 border-red-600 transform hover:scale-105 transition-transform duration-300"
+                        data-aos-delay="200" data-aos="fade-up" data-aos-easing="ease-in-out">
+                        {{-- Mengambil gambar dari Filament/Storage --}}
+                        <img src="{{ asset('storage/' . $partner->thumbnail) }}" alt="{{ $partner->name }}"
+                            class="max-h-full max-w-full object-contain">
+                    </div>
+                @empty
+                    <p class="col-span-full text-center text-gray-500" data-aos-delay="200" data-aos="fade-right"
+                        data-aos-easing="ease-in-out">Daftar partner kami akan segera diperbarui.</p>
+                @endforelse
+
+            </div>
+        </div>
+    </section>
+
+</x-layout>

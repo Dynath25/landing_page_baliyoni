@@ -18,6 +18,7 @@ class PartnershipController extends Controller
     
         // Mengembalikan view dengan data partnerships
         return view('partnership', [
+            'title' => 'Our Partner',
             'partnerships' => $partnerships
         ]);
     }
