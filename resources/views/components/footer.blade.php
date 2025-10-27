@@ -103,7 +103,7 @@
                 <a href="/" class="hover:scale-105">Home</a>
                 <a href="{{ route('about') }}" class="hover:scale-105">About Us</a>
                 <a href="{{ route('services') }}" class="hover:scale-105">Our Services</a>
-                <a href="{{ route('product') }}" class="hover:scale-105">Our Products</a>
+                <a href="https://balimall.id/" class="hover:scale-105">Our Products</a>
                 <a href="{{ route('partnership') }}" class="hover:scale-105">Partnerships</a>
                 <a href="{{ route('contact') }}" class="hover:scale-105">Contact Us</a>
             </div>

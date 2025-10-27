@@ -28,7 +28,7 @@
 
 <body class="h-full w-full overflow-x-hidden">
     <div class="min-h-full">
-        <x-notification />
+
         <x-navbar></x-navbar>
 
         <main>

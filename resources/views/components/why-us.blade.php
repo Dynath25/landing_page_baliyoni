@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="mt-[3.5rem] relative" data-aos-delay="400" data-aos="fade-up" data-aos-easing="ease-in-out">
+            <div class="mt-[3.5rem] relative" data-aos-delay="300" data-aos="fade-up" data-aos-easing="ease-in-out">
                 {{-- Tab 1: Pengalaman --}}
                 <div x-show="activeTab === 1" x-transition.opacity.duration.500ms>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

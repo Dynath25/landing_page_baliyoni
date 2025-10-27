@@ -32,7 +32,7 @@
 
                 {{-- Tombol --}}
                 <div class="mt-6">
-                    <a href="{{ route('product') }}"
+                    <a href="https://balimall.id/"
                         class="inline-block bg-red-600 text-white font-bold py-3 px-8 rounded-md text-lg hover:bg-red-700 transition-colors duration-300 shadow-xl"
                         data-aos-delay="400" data-aos="fade-right" data-aos-easing="ease-in-out">
                         Explore Our Product
@@ -75,7 +75,7 @@
                         <p class="mt-2 text-gray-500">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eum?
                         </p>
-                        <a href="{{ route('product') }}"
+                        <a href="https://balimall.id/"
                             class="mt-6 inline-block bg-gray-800 text-white font-semibold py-2 px-6 rounded-full hover:bg-gray-700 transition-colors">
                             learn more
                         </a>

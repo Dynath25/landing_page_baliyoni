@@ -11,9 +11,7 @@ use App\Http\Controllers\RoadmapController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\CartController;
 
 // Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -61,19 +59,4 @@ Route::get('/dukungan', [DukunganController::class, 'index'])->name('dukungan');
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/services', [ServiceController::class, 'index'])->name('services');
-Route::get('/product', [ProductController::class, 'index'])->name('product');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-
-Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
-
-// Aksi untuk menambah item ke keranjang
-Route::post('/cart/add/{product}', [CartController::class, 'add'])->name('cart.add');
-// Aksi untuk mengupdate jumlah item
-Route::post('/cart/update/{productId}', [CartController::class, 'update'])->name('cart.update');
-// Aksi untuk menghapus item dari keranjang
-Route::post('/cart/remove/{productId}', [CartController::class, 'remove'])->name('cart.remove');
-
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-
-// {product:slug} adalah parameter dinamis berdasarkan slug
-Route::get('/product/{product:slug}', [ProductController::class, 'show'])->name('products.show');

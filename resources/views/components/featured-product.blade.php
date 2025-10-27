@@ -60,7 +60,7 @@
                                 <div class="relative inline-block mt-8" data-aos="fade-up" data-aos-delay="600">
                                     <div class="absolute top-1 left-1 w-full h-full border-2 border-red-600 rounded-md">
                                     </div>
-                                    <a href="{{ asset('product') }}"
+                                    <a href="https://balimall.id/"
                                         class="relative inline-block bg-red-600 text-lg text-white font-bold py-3 px-8 rounded-md transition transform hover:-translate-x-1 hover:-translate-y-1">
                                         See More Product
                                     </a>
