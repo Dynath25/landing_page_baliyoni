@@ -1,5 +1,3 @@
-{{-- resources/views/partials/_service-centre.blade.php --}}
-
 <div>
     <section class="relative h-screen flex items-center text-white">
         <div class="absolute inset-0 bg-black">

@@ -1,5 +1,3 @@
-{{-- resources/views/components/why-choose-us.blade.php --}}
-
 <section id="why-us" class="py-20 lg:py-28 bg-white">
     <div class="container mx-auto px-4">
 

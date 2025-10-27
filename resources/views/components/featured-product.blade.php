@@ -1,5 +1,3 @@
-{{-- resources/views/components/featured-product-section.blade.php --}}
-
 @php
     // Data ini nantinya bisa Anda ambil dari database
     // Misalnya, produk yang ditandai sebagai 'is_featured'

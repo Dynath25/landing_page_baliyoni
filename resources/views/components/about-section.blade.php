@@ -1,5 +1,3 @@
-{{-- resources/views/components/about-section.blade.php --}}
-
 <section id="about" class="py-20 lg:py-28 bg-white overflow-hidden">
     <div class="container mx-auto px-24">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">

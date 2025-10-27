@@ -1,5 +1,3 @@
-{{-- resources/views/partials/_kontrak-maintenance.blade.php --}}
-
 {{-- CSS Kustom untuk scrollbar --}}
 <style>
     .custom-scrollbar::-webkit-scrollbar {

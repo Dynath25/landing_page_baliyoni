@@ -1,5 +1,3 @@
-{{-- resources/views/components/partners-section.blade.php --}}
-
 <style>
     @keyframes scroll {
         from {

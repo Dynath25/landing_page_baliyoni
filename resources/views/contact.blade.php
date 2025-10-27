@@ -1,5 +1,3 @@
-{{-- resources/views/pages/contact.blade.php --}}
-
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot:title>
 

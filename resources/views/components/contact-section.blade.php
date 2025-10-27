@@ -1,5 +1,3 @@
-{{-- resources/views/components/contact-section.blade.php --}}
-
 <section id="contact" class="pt-16">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

@@ -1,5 +1,3 @@
-{{-- resources/views/components/vision-section.blade.php --}}
-
 <section id="vision" class="pt-18 lg:pt-20 pb-8 bg-gray-50">
     <div class="relative max-w-5xl mx-auto px-4">
 

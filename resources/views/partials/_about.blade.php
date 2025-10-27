@@ -82,7 +82,7 @@
     <div class="container mx-auto px-4">
         <div class="mt-56 lg:mt-64" x-data="{
             activeSlide: 0,
-            totalSlides: 5, // Ganti dengan jumlah total slide/misi Anda
+            totalSlides: 5,
             slidesVisible: 3,
             maxScrollSteps() {
                 return this.totalSlides - this.slidesVisible;
